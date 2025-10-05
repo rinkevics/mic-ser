@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: mic-ser
+
+aws-key-id: ${AWS_ACCESS_KEY_ID}
+aws-key: ${AWS_SECRET_ACCESS_KEY}
