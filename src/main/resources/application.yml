@@ -1,6 +1,14 @@
 spring:
   application:
     name: mic-ser
+server:
+  port: ${MY_PORT}
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true
 
 aws-key-id: ${AWS_ACCESS_KEY_ID}
 aws-key: ${AWS_SECRET_ACCESS_KEY}
