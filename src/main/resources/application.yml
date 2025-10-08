@@ -12,3 +12,18 @@ eureka:
 
 aws-key-id: ${AWS_ACCESS_KEY_ID}
 aws-key: ${AWS_SECRET_ACCESS_KEY}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+  tracing:
+    sampling:
+      probability: '1.0'
+  otlp:
+    tracing:
+      endpoint: http://localhost:4318/v1/traces
