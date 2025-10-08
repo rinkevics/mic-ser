@@ -13,7 +13,7 @@
     <groupId>lv.kauguri</groupId>
     <artifactId>mic-ser</artifactId>
     <version>1</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>mic-ser</name>
     <description>Demo project for Spring Boot</description>
 
@@ -31,7 +31,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
